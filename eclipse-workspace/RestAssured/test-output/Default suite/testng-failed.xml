@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RegAccntOnPayfer">
+      <class name="PayferPublicAPIs.RegAccntOnPayfer">
         <methods>
           <include name="setUlr"/>
           <include name="register"/>
         </methods>
-      </class> <!-- RegAccntOnPayfer -->
+      </class> <!-- PayferPublicAPIs.RegAccntOnPayfer -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -43,10 +43,11 @@ public class RegAccntOnPayfer {
 				headers("Content-Type", "application/json").
 				body(payLoad.getPostData()).
 				when().
-				post(resources.placePostData()).
+				post(resources.registerAccount()).
 				then().
 				assertThat().contentType(ContentType.JSON).and().
 				extract().response();
+		 		
 		 		
 		 	     String stringresponse = res.asString();
 		 	     System.out.println(stringresponse);

@@ -17,13 +17,14 @@ public class First {
 		given().
 				param("location", "-33.8670522,151.1957362").
 				param("radius", "500").
-				param("key", "AIzaSyCLNfIEHSWfqWNkNd64zvptrKT9oKOEP98");
+				param("key", "AIzaSyCLNfIEHSWfqWNkNd64zvptrKT9oKOEP98").log().all().
 				when().
 				get("maps/api/place/nearbysearch/json").
 				then().assertThat().statusCode(200).and().contentType(ContentType.JSON).
 				 body("results[0].name",equalTo("Sydney")).and().
 			       body("results[0].place_id", equalTo("ChIJP3Sa8ziYEmsRUKgyFmh9AQM")).and().
-			       header("Server","pablo");
+			       header("Server","scaffolding on HTTPServer2");
+				
 ;				//asString();
 		
 		
