@@ -21,7 +21,7 @@ public class RegAccntOnPayfer {
 	
 	 public static Response response;
 	 public static String jsonAsString;
-	 //Properties prop = new Properties();
+	 Properties prop = new Properties();
 	 
 	 
 	 @BeforeTest
